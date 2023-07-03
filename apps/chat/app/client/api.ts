@@ -18,6 +18,7 @@ export interface LLMConfig {
   model: string;
   temperature?: number;
   top_p?: number;
+  // stream?: true;
   stream?: boolean;
   presence_penalty?: number;
   frequency_penalty?: number;

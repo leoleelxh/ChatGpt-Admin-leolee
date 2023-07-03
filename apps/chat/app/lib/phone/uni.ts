@@ -14,7 +14,7 @@ interface UniResponse {
     messageCount: number;
     totalAmount: string;
     payAmount: string;
-    virtualAmount: string;
+    virtualAmount: string; 
     message: {
       id: string;
       to: string;

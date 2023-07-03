@@ -1,6 +1,7 @@
 {
-  "name": "chatgpt-admin-web",
+  "name": "AICool",
   "version": "1.0.0",
+  "private": false,
   "description": "ChatGPT web ui with user management and dashboard",
   "keywords": [
     "chatgpt",
@@ -16,10 +17,7 @@
   "contributors": [
     "Peron <peron_ap@icloud.com> (https://github.com/PeronGH)"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AprilNEA/ChatGPT-Admin-Web"
-  },
+  "repository": "git+https://github.com/AprilNEA/ChatGPT-Admin-Web",
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -31,6 +29,7 @@
     "prettier": "prettier --write ."
   },
   "devDependencies": {
-    "turbo": "latest"
-  }
+    "turbo": "^1.10.7"
+  },
+  "main": "index.js"
 }

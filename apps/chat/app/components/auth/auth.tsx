@@ -280,15 +280,15 @@ export function AuthPage() {
       content = (
         <div className={styles["password-part"]}>
           <div className={styles["tab-container"]}>
-            <button
+            {/* <button
               className={`${styles["tab-button"]} ${
                 tab === "phone" ? styles.active : ""
               }`}
               onClick={() => setTab("phone")}
             >
               {Locales.User.CodeLogin}
-            </button>
-            {emailService && (
+            </button> */}
+            {/* {emailService && (
               <button
                 className={`${styles["tab-button"]} ${
                   tab === "email" ? styles.active : ""
@@ -297,24 +297,24 @@ export function AuthPage() {
               >
                 {Locales.User.PasswordLogin}
               </button>
-            )}
+            )} */}
           </div>
           {tab === "phone" ? <CaptchaLogin /> : <EmailLogin />}
 
           <div className={styles["divider"]}>
-            <div className={styles["divider-line"]} />
-            <div className={styles["divider-text"]}>or</div>
-            <div className={styles["divider-line"]} />
+            {/* <div className={styles["divider-line"]} /> */}
+            {/* <div className={styles["divider-text"]}>or</div> */}
+            {/* <div className={styles["divider-line"]} /> */}
           </div>
-          <div className={styles["third-part-login-options"]}>
-            <img
+          {/* <div className={styles["third-part-login-options"]}> */}
+            {/* <img
               src={WechatLogo.src}
               className={styles["third-part-option"]}
               onClick={() => {
                 setTab("wechat");
               }}
-            />
-          </div>
+            /> */}
+          {/* </div> */}
         </div>
       );
       break;
@@ -326,7 +326,7 @@ export function AuthPage() {
         <BotIcon />
       </div>
       <div className={styles["auth-title"]}>{Locales.Auth.Title}</div>
-      <div className={styles["auth-tips"]}>{Locales.Auth.Tips}</div>
+      {/* <div className={styles["auth-tips"]}>{Locales.Auth.Tips}</div> */}
       <div className={styles["auth-container"]}>{content}</div>
     </div>
   );
